@@ -47,10 +47,10 @@ export default function Home() {
     <main className='w-dvw h-dvh md:py-24 bg-gradient-to-b md:bg-gradient-to-r from-gray-500 to-gray-950'>
       <div className='h-full py-12 md:py-0 md:flex md:flex-row items-center justify-center space-y-8 md:space-x-10 md:space-y-0'>
         <div className='flex flex-col items-center space-y-4 md:ml-20'>
-          <h1 className='text-5xl md:text-6xl lg:text-8xl uppercase font-semibold text-white/90 text-center'>
+          <h1 className='text-5xl md:text-7xl lg:text-8xl uppercase font-semibold text-white/90 text-center'>
             Go beyond numbers
           </h1>
-          <div className='text-md md:text-2xl text-center text-white'>
+          <div className='text-md md:text-2xl text-center text-white max-w-lg'>
             Transforming the way finance professionals conduct qualitative
             public market research.
           </div>
@@ -69,9 +69,8 @@ export default function Home() {
                   <Image
                     src={offer.image}
                     alt={`${offer.title} image`}
-                    width={900}
-                    height={1000}
-                    layout='responsive'
+                    width={700}
+                    height={800}
                     priority
                   ></Image>
                   <div className='relative flex justify-center items-center'>
