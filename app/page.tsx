@@ -44,8 +44,8 @@ export default function Home() {
   ];
 
   return (
-    <main className='w-dvw h-dvh p-4 md:py-24 bg-gradient-to-b md:bg-gradient-to-r from-gray-500 to-gray-950'>
-      <div className='h-full py-8 md:py-0 md:flex md:flex-row items-center justify-center space-y-12 md:space-x-10 md:space-y-0'>
+    <main className='w-dvw h-dvh p-3 md:py-24 bg-gradient-to-b md:bg-gradient-to-r from-gray-500 to-gray-950'>
+      <div className='h-full py-8 md:py-0 md:flex md:flex-row items-center justify-center space-y-10 md:space-x-10 md:space-y-0'>
         <div className='flex flex-col items-center space-y-4 md:ml-20'>
           <h1 className='text-5xl md:text-7xl lg:text-8xl uppercase font-semibold text-white/90 text-center'>
             Go beyond numbers
