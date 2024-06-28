@@ -71,11 +71,10 @@ export default function Home() {
                     alt={`${offer.title} image`}
                     width={1000}
                     height={1000}
-                    layout='responsive'
                     priority
                   ></Image>
-                  <div className='relative flex justify-center items-center'>
-                    <p className='absolute rounded-md text-white bottom-[-5rem] p-4 bg-gray-400/90 w-11/12'>
+                  <div className='hidden md:relative md:flex md:justify-center md:items-center'>
+                    <p className='md:absolute md:rounded-md md:text-white md:bottom-[-5rem] md:p-4 md:bg-gray-400/90 mw-11/12'>
                       {offer.description}
                     </p>
                   </div>
