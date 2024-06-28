@@ -69,8 +69,9 @@ export default function Home() {
                   <Image
                     src={offer.image}
                     alt={`${offer.title} image`}
-                    width={700}
-                    height={800}
+                    width={1000}
+                    height={1000}
+                    layout='responsive'
                     priority
                   ></Image>
                   <div className='relative flex justify-center items-center'>
