@@ -90,7 +90,7 @@ export default function Home() {
             key={offer.id}
             className={`cursor-pointer uppercase underline underline-offset-4 decoration-4${
               offer.title === changeService
-                ? "font-bold text-gray-50 underline underline-offset-4 decoration-4"
+                ? "font-bold text-gray-50 decoration-4"
                 : "font-normal text-gray-400"
             }`}
           >
