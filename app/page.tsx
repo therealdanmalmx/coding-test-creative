@@ -89,8 +89,9 @@ export default function Home() {
           <p
             key={offer.id}
             className={`cursor-pointer uppercase font-normal text-gray-400 no-underline, ${
-              offer.title === changeService &&
-              "font-bold text-gray-50 underline underline-offset-4 decoration-4"
+              offer.title === changeService
+                ? "font-bold text-gray-50 underline underline-offset-4 decoration-4"
+                : "font-normal text-gray-50 no-underline underline-offset-0 decoration-0"
             }`}
           >
             <span onClick={() => setChangeService(offer.title)}>
