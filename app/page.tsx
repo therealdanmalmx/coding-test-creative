@@ -44,7 +44,7 @@ export default function Home() {
   ];
 
   return (
-    <main className='w-dvw h-dvh md:py-24 bg-gradient-to-b md:bg-gradient-to-r from-gray-500 to-gray-950'>
+    <main className='w-dvw h-dvh md:py-24 bg-gradient-to-b md:bg-gradient-to-r from-blue-700 to-gray-950'>
       <div className='h-full py-8 md:py-0 md:flex md:flex-row items-center justify-center space-y-6 md:space-x-10 md:space-y-0'>
         <div className='flex flex-col items-center space-y-4 md:ml-20'>
           <h1 className='text-5xl md:text-7xl lg:text-8xl uppercase font-semibold text-white/90 text-center'>
@@ -88,10 +88,9 @@ export default function Home() {
         {quartrOffer.map((offer) => (
           <p
             key={offer.id}
-            className={`cursor-pointer uppercase, ${
-              offer.title === changeService
-                ? "font-bold text-gray-50 underline underline-offset-4 decoration-4"
-                : "font-normal text-gray-400 no-underline"
+            className={`cursor-pointer uppercase font-normal text-gray-400 no-underline, ${
+              offer.title === changeService &&
+              "font-bold text-gray-50 underline underline-offset-4 decoration-4"
             }`}
           >
             <span onClick={() => setChangeService(offer.title)}>
