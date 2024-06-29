@@ -88,10 +88,10 @@ export default function Home() {
         {quartrOffer.map((offer) => (
           <p
             key={offer.id}
-            className={`cursor-pointer uppercase font-normal text-gray-400 no-underline, ${
+            className={`cursor-pointer uppercase font-normal text-gray-400, ${
               offer.title === changeService
-                ? "font-bold text-gray-50 underline underline-offset-4 decoration-4"
-                : "font-normal text-gray-50 no-underline underline-offset-0 decoration-0"
+                ? "font-bold text-gray-50 underline underline-offset-4 underline-white-400"
+                : "font-normal text-gray-300 no-underline"
             }`}
           >
             <span onClick={() => setChangeService(offer.title)}>
