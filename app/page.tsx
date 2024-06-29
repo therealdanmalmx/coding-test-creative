@@ -88,9 +88,9 @@ export default function Home() {
         {quartrOffer.map((offer) => (
           <p
             key={offer.id}
-            className={`cursor-pointer uppercase no-underline ${
+            className={`cursor-pointer uppercase ${
               offer.title === changeService
-                ? "font-bold text-gray-50 underline underline-offset-4 decoration-4"
+                ? "font-extrabold text-gray-50 underline underline-offset-4"
                 : "font-normal text-gray-300 no-underline"
             }`}
           >
