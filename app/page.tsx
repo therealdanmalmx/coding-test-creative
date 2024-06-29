@@ -91,7 +91,7 @@ export default function Home() {
             className={`cursor-pointer uppercase ${
               offer.title === changeService
                 ? "font-extrabold text-gray-50 underline underline-offset-4"
-                : "font-normal text-gray-300 no-underline"
+                : "font-normal text-gray-400 md:text-gray-300 no-underline"
             }`}
           >
             <span onClick={() => setChangeService(offer.title)}>
